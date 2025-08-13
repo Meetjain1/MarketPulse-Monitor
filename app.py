@@ -6,16 +6,15 @@ from datetime import datetime
 import plotly.express as px
 import numpy as np
 
-# Import our own special code files - they do all the hard work!
+# import our modules
 import db
 import price_compare
 import email_alert
 
-# Set up our database when the app first starts
-# This is like setting the table before dinner!
+# init the database when app starts
 db.init_db()
 
-# Make our app look good with a nice title and wide layout
+# page config with no emoji
 st.set_page_config(
     page_title="Price Monitoring Dashboard",
     page_icon=None,
@@ -24,7 +23,6 @@ st.set_page_config(
 )
 
 # Add some custom CSS for better styling
-# © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
 st.markdown("""
 <style>
     .dataframe {
@@ -73,7 +71,6 @@ def main():
     page = st.sidebar.radio("Navigation", nav_options)
     
     # run the selected page
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
     if page == "Home":
         home_page()
     elif page == "Price Comparison Table":
@@ -129,7 +126,6 @@ def home_page():
             st.metric("Avg. Our Price Advantage", f"${stats['avg_our_advantage']}")
     
     # add some visualizations
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
     st.subheader("Price Comparison Overview")
     
     # price status distribution
@@ -151,7 +147,6 @@ def home_page():
         alerts_df = alerts_df.sort_values('price_diff', ascending=False).head(5)
         
         # drop status and message columns
-        # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
         display_df = alerts_df[['product_name', 'our_price', 'competitor_name', 'competitor_price', 'price_diff']]
         display_df = display_df.rename(columns={
             'product_name': 'Product', 
@@ -185,7 +180,6 @@ def price_table_page():
     display_df = df.copy()
     
     # rename columns for better display
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
     display_df = display_df.rename(columns={
         'product_id': 'Product ID',
         'product_name': 'Product Name',
@@ -221,7 +215,6 @@ def upload_page():
     st.write("Required columns: product_id, product_name, our_price, competitor_name, competitor_price, last_updated")
     
     # Add two columns for the upload and sample data buttons
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
     col1, col2 = st.columns(2)
     
     with col1:
@@ -263,7 +256,6 @@ def upload_page():
                 st.error(f"Error reading file: {str(e)}")
     
     # Add a section for sample data
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
     with col2:
         st.subheader("Try Sample Data")
         st.write("No CSV file? Use our sample dataset with 100 products:")
@@ -290,7 +282,6 @@ def upload_page():
                         sample_data_loaded = True
                         
                         # We'll use a session state to keep track of the sample data
-                        # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
                         if 'sample_data' not in st.session_state:
                             st.session_state.sample_data = sample_df
                 else:
@@ -344,7 +335,6 @@ def search_filter_page():
         if search_term:
             # could use the db search function, but since we already have all data
             # with the status info, we can just filter it here
-            # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
             filtered_data = all_data[
                 all_data['product_name'].str.contains(search_term, case=False) | 
                 all_data['competitor_name'].str.contains(search_term, case=False)
@@ -394,7 +384,6 @@ def display_filtered_data(df):
     })
     
     # format currency values
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
     display_df['Our Price'] = display_df['Our Price'].apply(lambda x: f"${x:.2f}")
     display_df['Their Price'] = display_df['Their Price'].apply(lambda x: f"${x:.2f}")
     
@@ -415,6 +404,10 @@ def display_filtered_data(df):
 def alert_settings_page():
     st.title("Email Alert Settings")
     
+    # email alert status message
+    st.warning("Email alert is in process")
+    st.info("This feature will be implemented in a future update.")
+    
     # get cheaper competitor data for alert preview
     all_data = db.get_all_products()
     
@@ -424,32 +417,6 @@ def alert_settings_page():
     
     all_data = price_compare.compare_prices(all_data)
     alert_data = all_data[all_data['status'] == 'alert']
-    
-    # email settings form
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
-    st.subheader("Configure Email Alerts")
-    
-    # Check if email credentials are configured
-    if not email_alert.SMTP_USERNAME or not email_alert.SMTP_PASSWORD:
-        st.warning(
-            "Email alerts are not configured. To enable email alerts, create a `.env` file in the project root "
-            "and add your SMTP credentials. See the `.env.example` file for the required format."
-        )
-    
-    email = st.text_input("Your Email Address", email_alert.DEFAULT_RECIPIENT)
-    
-    # SMTP settings would be in a proper form here
-    # but for demo purposes keeping it simple
-    if st.button("Test Alert Email"):
-        if alert_data.empty:
-            st.warning("No price alerts to send. Add data with competitor prices lower than ours first.")
-        else:
-            success, message = email_alert.send_price_alert(alert_data, email)
-            
-            if success:
-                st.success(message)
-            else:
-                st.warning(message)
     
     # alert preview
     st.subheader("Current Price Alerts")
@@ -482,7 +449,6 @@ def alert_settings_page():
         })
         
         # format values
-        # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
         display_df['Our Price'] = display_df['Our Price'].apply(lambda x: f"${x:.2f}")
         display_df['Their Price'] = display_df['Their Price'].apply(lambda x: f"${x:.2f}")
         display_df['Difference'] = display_df['Difference'].apply(lambda x: f"${x:.2f}")

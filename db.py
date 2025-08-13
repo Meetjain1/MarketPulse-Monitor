@@ -3,30 +3,24 @@ import pandas as pd
 import os
 import datetime
 
-# This function gives us the location where the database is stored
 def get_db_path():
-    # Hey let's make a folder for our data if we don't have one yet
-    # This keeps all our stuff nice and organized
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
+    # create db directory if it doesn't exist
     db_dir = os.path.join(os.getcwd(), 'data')
     if not os.path.exists(db_dir):
         os.makedirs(db_dir)
     
-    # This is where our database file lives
+    # return the full path to the database file
     return os.path.join(db_dir, 'price_monitor.db')
 
 def init_db():
-    # Grab where our database should be
+    # get the database file path
     db_path = get_db_path()
     
-    # Connect to our database - if it's not there yet, SQLite will make it for us
-    # That's pretty cool!
+    # gonna connect to the database now
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
-    # Make our product table if we don't have it already
-    # This is like creating a big spreadsheet to store all our product info
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
+    # make a table if we don't have one already
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS products (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -39,8 +33,7 @@ def init_db():
     )
     ''')
     
-    # Save our changes and close up the database connection
-    # Always gotta clean up after ourselves!
+    # save our work and close up shop
     conn.commit()
     conn.close()
     
@@ -67,11 +60,10 @@ def init_db():
     return engine
 
 def save_data_to_db(df):
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
-    # converting to proper types before saving
+    # gotta fix the dates so they look nice
     df['last_updated'] = pd.to_datetime(df['last_updated']).dt.date
     
-    # quick check for any missing required fields
+    # better check if we got all the stuff we need
     required_fields = ['product_id', 'product_name', 'our_price', 'competitor_name', 
                       'competitor_price', 'last_updated']
     
@@ -79,18 +71,18 @@ def save_data_to_db(df):
         if field not in df.columns:
             return False, f"Missing required field: {field}"
     
-    # make sure no negative prices slipped through
+    # nobody's gonna give us money to take their money lol
     if (df['our_price'] < 0).any() or (df['competitor_price'] < 0).any():
         return False, "Negative prices are not allowed"
     
     try:
-        # get database path
+        # where we storing this stuff?
         db_path = get_db_path()
         
-        # connect to database
+        # open the door to the database
         conn = sqlite3.connect(db_path)
         
-        # insert the data
+        # put all the data in one by one
         for _, row in df.iterrows():
             cursor = conn.cursor()
             cursor.execute('''
@@ -105,49 +97,48 @@ def save_data_to_db(df):
                 row['last_updated']
             ))
         
-        # commit and close
+        # save our work and close up shop
         conn.commit()
         conn.close()
         
         return True, "Data saved successfully"
     except Exception as e:
-        # just a basic error handler for now
+        # uh oh something went wrong
         print(f"Error saving data: {str(e)}")
         return False, f"Error saving data: {str(e)}"
 
 def get_all_products():
     try:
-        # get database path
+        # where's that database again?
         db_path = get_db_path()
         
-        # use pandas to read from sqlite
+        # let pandas do the heavy lifting
         conn = sqlite3.connect(db_path)
         df = pd.read_sql_query("SELECT * FROM products", conn)
         conn.close()
         
         return df
     except Exception as e:
-        # graceful failure if db isn't ready yet
+        # don't crash if we can't find the data
         print(f"Database error: {str(e)}")
         return pd.DataFrame()
 
 def search_products(search_term):
     try:
-        # get database path
-        # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
+        # find the database
         db_path = get_db_path()
         
-        # connect to database
+        # open up the database
         conn = sqlite3.connect(db_path)
         
-        # search query
+        # let's find what they're looking for
         query = f"""
         SELECT * FROM products 
         WHERE product_name LIKE '%{search_term}%' 
         OR competitor_name LIKE '%{search_term}%'
         """
         
-        # execute query and return results
+        # run the search and give back what we found
         df = pd.read_sql_query(query, conn)
         conn.close()
         
@@ -194,7 +185,6 @@ def filter_we_are_cheaper():
         """
         
         # execute query and return results
-        # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
         df = pd.read_sql_query(query, conn)
         conn.close()
         

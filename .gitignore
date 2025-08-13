@@ -1,50 +1,42 @@
-# Python
+# Python bytecode
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-build/
-develop-eggs/
+
+# Distribution / packaging
 dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
+build/
 *.egg-info/
-.installed.cfg
-*.egg
 
-# Environment
-# © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
-.env
-.venv
-env/
+# Virtual environments
 venv/
+env/
 ENV/
-env.bak/
-venv.bak/
 
-# Database
+# Environment variables
+.env
+
+# Database files
 data/
 *.db
-*.sqlite3
 
-# Streamlit
-.streamlit/
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# IDE and editors
+# IDE specific files
 .idea/
 .vscode/
 *.swp
 *.swo
-*~
-.DS_Store
 
-# Jupyter
-.ipynb_checkpoints
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Cache directories
+.pytest_cache/
+.coverage
+htmlcov/

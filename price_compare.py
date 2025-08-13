@@ -12,31 +12,29 @@ def compare_prices(df):
     result_df = df.copy()
     
     # add status column for styling
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
     result_df['status'] = ''
     result_df['message'] = ''
     
-    # Let's check each product one by one and see how our prices stack up
-    # This is like being a price detective! 🕵️‍♂️
+    # look at each product and check if the other guys are cheaper
     for idx, row in result_df.iterrows():
         my_price = row['our_price']
         comp_price = row['competitor_price']
         
-        # Figure out who's cheaper and by how much
+        # figure out who's winning the price war
         if comp_price < my_price:
-            # Oh no! They're beating our price - this is bad news!
+            # oh no they're beating us on price
             price_diff = my_price - comp_price
             percentage = (price_diff / my_price) * 100
             result_df.at[idx, 'status'] = 'alert'
             result_df.at[idx, 'message'] = f"Price Drop Alert (${price_diff:.2f} / {percentage:.1f}% cheaper)"
         elif my_price < comp_price:
-            # Woohoo! We're cheaper than them - customers will love us!
+            # we're cheaper, looking good!
             price_diff = comp_price - my_price
             percentage = (price_diff / comp_price) * 100
             result_df.at[idx, 'status'] = 'good'
             result_df.at[idx, 'message'] = f"We are cheaper (${price_diff:.2f} / {percentage:.1f}% cheaper)"
         else:
-            # Exactly the same price - weird coincidence!
+            # same price, nothing exciting
             result_df.at[idx, 'status'] = 'neutral'
             result_df.at[idx, 'message'] = "Prices are identical"
     
@@ -56,17 +54,16 @@ def get_price_change_stats(df):
             'avg_our_advantage': 0
         }
     
-    # count products where competitor is cheaper (status = alert)
+    # count how many times they're beating us
     competitors_cheaper = len(df[df['status'] == 'alert'])
     
-    # count products where we are cheaper (status = good)
+    # count how many times we're winning
     we_are_cheaper = len(df[df['status'] == 'good'])
     
-    # count products with identical prices (status = neutral)
+    # count when it's a tie
     identical_prices = len(df[df['status'] == 'neutral'])
     
-    # © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
-    # might be useful to know average price differences
+    # figure out how much better/worse we're doing
     comp_cheaper_df = df[df['status'] == 'alert']
     we_cheaper_df = df[df['status'] == 'good']
     

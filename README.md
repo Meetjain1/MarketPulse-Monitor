@@ -1,130 +1,177 @@
-# E-commerce Price Monitoring & Alert Dashboard
+# MarketPulse Monitor - E-commerce Price Monitoring Dashboard
 
-A powerful Streamlit-based dashboard for tracking and comparing product prices across competitors, providing visual insights, and sending alerts when competitors drop their prices below yours.
+MarketPulse Monitor is a powerful web-based dashboard built with Streamlit that helps e-commerce businesses track competitor pricing, compare with their own prices, and make data-driven pricing decisions.
 
-![Dashboard Preview](https://via.placeholder.com/1200x600?text=E-commerce+Price+Monitoring+Dashboard)
+![MarketPulse Monitor Dashboard](https://i.ibb.co/qnwP3jw/market-pulse-dashboard.png)
 
-## Project Overview
+## 📊 Project Overview
 
-This dashboard helps e-commerce businesses stay competitive by tracking competitor pricing in real-time. The system analyzes price differences, highlights opportunities for price adjustments, and sends alerts when competitors undercut your prices.
+In today's competitive e-commerce landscape, staying on top of competitor pricing is essential for maintaining market share and maximizing profits. MarketPulse Monitor provides a real-time view of how your prices compare to competitors, helping you identify opportunities and threats.
 
-## Architecture
+## 🏗️ Architecture
 
-### System Architecture
-
-```
-┌─────────────────┐     ┌───────────────┐     ┌───────────────────┐
-│                 │     │               │     │                   │
-│  Streamlit UI   │◄────┤  Application  │◄────┤  SQLite Database  │
-│  (app.py)       │     │  Logic        │     │  (data/price_     │
-│                 │     │               │     │   monitor.db)     │
-└────────┬────────┘     └───────┬───────┘     └───────────────────┘
-         │                      │
-         │                      │
-         ▼                      ▼
-┌─────────────────┐     ┌───────────────┐
-│                 │     │               │
-│  Data Upload    │     │  Email Alert  │
-│  & Processing   │     │  System       │
-│                 │     │               │
-└─────────────────┘     └───────────────┘
-```
-
-### Data Flow
+The application follows a modular architecture designed for maintainability and extensibility:
 
 ```
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│             │     │             │     │             │     │             │
-│  CSV Data   │────►│  Database   │────►│  Price      │────►│  Dashboard  │
-│  Upload     │     │  Storage    │     │  Analysis   │     │  Display    │
-│             │     │             │     │             │     │             │
-└─────────────┘     └─────────────┘     └──────┬──────┘     └─────────────┘
-                                               │
-                                               │
-                                               ▼
-                                        ┌─────────────┐
-                                        │             │
-                                        │  Alert      │
-                                        │  System     │
-                                        │             │
-                                        └─────────────┘
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│                 │     │                 │     │                 │
+│  User Interface │────▶│  Business Logic │────▶│  Data Access    │
+│  (Streamlit)    │     │  (Processing)   │     │  Layer (SQLite) │
+│                 │◀────│                 │◀────│                 │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+        │                       │                       │
+        │                       │                       │
+        ▼                       ▼                       ▼
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│                 │     │                 │     │                 │
+│  UI Components  │     │  Price Analysis │     │  Database       │
+│  (app.py)       │     │  (price_compare)│     │  Operations     │
+│                 │     │                 │     │  (db.py)        │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
 ```
 
-### Component Breakdown
+### Component Diagram
 
-| Component | File | Description |
-|-----------|------|-------------|
-| Web Interface | `app.py` | Streamlit application with dashboard, upload, comparison, and alert pages |
-| Database Layer | `db.py` | SQLite database operations for storing and retrieving product data |
-| Price Comparison | `price_compare.py` | Logic for comparing prices and calculating statistics |
-| Alert System | `email_alert.py` | Email notifications for price drops |
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                         app.py (Main Application)               │
+├─────────────────────────────────────────────────────────────────┤
+│ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ │
+│ │ Dashboard   │ │ Price       │ │ Data        │ │ Search &    │ │
+│ │ Home Page   │ │ Comparison  │ │ Upload      │ │ Filter      │ │
+│ └─────────────┘ └─────────────┘ └─────────────┘ └─────────────┘ │
+└───────────────────────────────┬─────────────────────────────────┘
+                                │
+                                ▼
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│                 │     │                 │     │                 │
+│  price_compare  │     │     db.py       │     │  email_alert    │
+│  (Analysis)     │     │  (Data Access)  │     │  (Notification) │
+│                 │     │                 │     │                 │
+└─────────────────┘     └───────┬─────────┘     └─────────────────┘
+                                │
+                                ▼
+                        ┌─────────────────┐
+                        │                 │
+                        │  SQLite DB      │
+                        │  (Storage)      │
+                        │                 │
+                        └─────────────────┘
+```
 
-## Features
+### Data Flow Diagram
 
-- **Interactive Dashboard**: Visual representation of price comparisons and statistics
-- **Data Management**: Upload CSV files or use sample data to populate the system
-- **Price Comparison**: Automatically compare your prices with competitors
-- **Search & Filter**: Find specific products or focus on price drop alerts
-- **Email Alerts**: Get notified when competitors lower their prices
-- **Database Management**: Add, view, and clear data as needed
+```
+┌─────────────┐      ┌─────────────┐      ┌─────────────┐
+│             │      │             │      │             │
+│  CSV File   │─────▶│  Data       │─────▶│  Database   │
+│  Upload     │      │  Validation │      │  Storage    │
+│             │      │             │      │             │
+└─────────────┘      └─────────────┘      └─────────────┘
+                                                 │
+                                                 ▼
+┌─────────────┐      ┌─────────────┐      ┌─────────────┐
+│             │      │             │      │             │
+│  Dashboard  │◀─────│  Data       │◀─────│  Price      │
+│  Display    │      │  Retrieval  │      │  Analysis   │
+│             │      │             │      │             │
+└─────────────┘      └─────────────┘      └─────────────┘
+```
 
-## Usage Guide
+## 🛠️ Technology Stack
 
-### 1. Navigation
+- **Frontend**: Streamlit
+- **Data Processing**: Pandas, NumPy
+- **Visualization**: Plotly
+- **Database**: SQLite
+- **Data Format**: CSV
 
-The dashboard consists of several pages accessible from the sidebar:
+## 📱 Features
 
-- **Home**: Overview with key statistics and charts
-- **Price Comparison Table**: Detailed product-by-product price comparison
-- **Upload Data**: Import your product and competitor data
-- **Search & Filter**: Find specific products or apply filters
-- **Alert Settings**: Configure email notifications for price drops
+- **Interactive Dashboard**: Visual overview of price comparisons
+- **Data Upload**: Import pricing data via CSV files
+- **Sample Data**: Test with pre-configured sample data
+- **Price Comparison**: Automatically analyze price differences
+- **Search & Filter**: Find specific products or competitors
+- **Database Management**: Reset database when needed
 
-### 2. Data Upload
+## 📖 Usage Guide
 
-You have two options for adding data:
+### Dashboard Overview
 
-1. **Upload Your CSV**: Prepare a CSV file with these columns:
-   - `product_id`: Unique identifier for each product
-   - `product_name`: Name of the product
-   - `our_price`: Your selling price
-   - `competitor_name`: Name of the competitor
-   - `competitor_price`: Competitor's price
-   - `last_updated`: Date of the price check (YYYY-MM-DD format)
+The home page dashboard provides a comprehensive overview of your price comparison data:
 
-2. **Use Sample Data**: Click the "Load Sample Data" button to populate the dashboard with 100 sample products for testing.
+1. **Key Metrics**: See at a glance how many products are priced competitively
+2. **Price Comparison Charts**: Visual representation of price differences
+3. **Last Update**: Timestamp of the most recent data update
 
-### 3. Dashboard Overview
+### Adding Product Data
 
-The Home page displays:
-- Total products monitored
-- Number of price drop alerts
-- Products where your prices are more competitive
-- Average price advantages
-- Visual breakdowns of price comparisons
-- Top alerts requiring attention
+There are two ways to add data to the system:
 
-### 4. Price Comparison
+1. **Upload Your Own CSV**:
+   - Navigate to the "Upload Data" page
+   - Prepare a CSV with columns: product_id, product_name, our_price, competitor_name, competitor_price, last_updated
+   - Click "Upload CSV" and select your file
 
-The Price Comparison Table shows all products with color coding:
-- **Red**: Competitor's price is lower (alert)
-- **Green**: Your price is lower (good)
-- **Gray**: Identical prices (neutral)
+2. **Use Sample Data**:
+   - Navigate to the "Upload Data" page
+   - Click "Load Sample Data" to populate the database with 100 sample products
 
-### 5. Search & Filter
+### Comparing Prices
 
-Use the Search & Filter page to:
-- Search by product name or competitor name
-- Filter to show only products with specific price comparison statuses
-- Sort results by price difference or percentage
+The "Price Comparison Table" page displays all products with visual indicators:
 
-### 6. Setting Up Alerts
+- **Red Background**: Competitor is cheaper (potential threat)
+- **Green Background**: Your price is lower (competitive advantage)
+- **No Highlight**: Identical pricing (parity)
 
-1. Navigate to the Alert Settings page
-2. Configure your email address for notifications
-3. Test the email configuration
-4. Set up alert frequency preferences
+### Searching Products
 
-## License
+To find specific products:
+
+1. Navigate to the "Search & Filter" page
+2. Enter a product name or competitor in the search box
+3. Use the filter buttons to show only products where competitors are cheaper or where you have a price advantage
+
+### Managing the Database
+
+If you need to start fresh:
+
+1. Navigate to the "Upload Data" page
+2. In the "Database Management" section, use the "Delete Database" button
+3. Confirm your action (this will permanently remove all product data)
+
+## 🚀 Deployment on Streamlit Cloud
+
+To deploy this project on Streamlit Cloud:
+
+1. Fork this repository to your GitHub account
+2. Log in to [Streamlit Cloud](https://streamlit.io/cloud)
+3. Click "New app" and select your forked repository
+4. Set the main file path to `app.py`
+5. Deploy your app
+
+The application will be publicly accessible with an automatic HTTPS certificate.
+
+## 🔧 Project Structure
+
+```
+├── app.py               # Main Streamlit application
+├── db.py                # Database operations
+├── price_compare.py     # Price comparison logic
+├── email_alert.py       # Alert notification system (coming soon)
+├── requirements.txt     # Python dependencies
+├── .gitignore           # Git ignore file
+├── README.md            # Project documentation
+└── data/                # Database storage directory
+    └── price_monitor.db # SQLite database
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit pull requests with improvements or new features.
+
+## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.

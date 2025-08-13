@@ -1,0 +1,101 @@
+product_id,product_name,our_price,competitor_name,competitor_price,last_updated
+P001,Gaming Laptop XR5,1299.99,TechGiant,1199.99,2025-08-01
+P002,Wireless Headphones Pro,149.99,AudioKing,159.99,2025-08-01
+P003,4K Smart TV 55",699.99,ElectroMart,649.99,2025-08-02
+P004,Smartphone Galaxy X,899.99,PhoneWorld,949.99,2025-08-02
+P005,Mechanical Keyboard RGB,129.99,GamersChoice,129.99,2025-08-03
+P006,Wireless Mouse Ultra,59.99,TechGiant,49.99,2025-08-03
+P007,External SSD 1TB,149.99,DataStore,139.99,2025-08-04
+P008,Gaming Monitor 27",349.99,ScreenMasters,379.99,2025-08-04
+P009,Bluetooth Speaker,79.99,AudioKing,69.99,2025-08-05
+P010,Fitness Tracker Pro,129.99,WearTech,129.99,2025-08-05
+P011,Tablet 10-inch,399.99,TabletWorld,389.99,2025-08-06
+P012,Digital Camera DSLR,599.99,PhotoPro,649.99,2025-08-06
+P013,Wireless Earbuds,89.99,AudioKing,79.99,2025-08-07
+P014,Smart Watch Series 5,249.99,WearTech,229.99,2025-08-07
+P015,Gaming Console NextGen,499.99,GamersChoice,489.99,2025-08-08
+P016,Ultrabook Pro 13",1099.99,LaptopWorld,1049.99,2025-08-08
+P017,Wireless Charger Pad,39.99,TechGiant,35.99,2025-08-09
+P018,Smart Speaker Assistant,79.99,SmartHome,89.99,2025-08-09
+P019,VR Headset Pro,299.99,VRZone,279.99,2025-08-10
+P020,Action Camera 4K,199.99,PhotoPro,189.99,2025-08-10
+P021,Drone Explorer X,399.99,SkyTech,419.99,2025-08-10
+P022,Portable Power Bank 20000mAh,59.99,PowerElectronics,49.99,2025-08-11
+P023,WiFi Mesh System (3-pack),249.99,NetworkPro,239.99,2025-08-11
+P024,Smart Doorbell Camera,149.99,SmartHome,139.99,2025-08-11
+P025,Robot Vacuum Cleaner,299.99,HomeAutomation,319.99,2025-08-11
+P026,Air Purifier Premium,199.99,CleanAir,189.99,2025-08-12
+P027,Coffee Maker Deluxe,129.99,KitchenMaster,119.99,2025-08-12
+P028,Bluetooth Turntable,159.99,AudioKing,149.99,2025-08-12
+P029,Wireless Keyboard Slim,69.99,OfficeSupplies,79.99,2025-08-12
+P030,Portable Bluetooth Printer,99.99,PrinterPro,109.99,2025-08-12
+P031,Smart Light Bulbs (4-pack),49.99,SmartHome,45.99,2025-08-12
+P032,Dash Cam Pro,89.99,AutoTech,79.99,2025-08-12
+P033,Electric Toothbrush Sonic,79.99,HealthTech,69.99,2025-08-12
+P034,Blender Professional,129.99,KitchenMaster,139.99,2025-08-12
+P035,Smart Thermostat,179.99,HomeAutomation,169.99,2025-08-12
+P036,Electric Scooter City,399.99,MobilityTech,419.99,2025-08-12
+P037,Wireless Security Camera,89.99,SafeHome,79.99,2025-08-12
+P038,Baby Monitor HD,149.99,BabyCare,159.99,2025-08-12
+P039,Digital Food Scale,29.99,KitchenMaster,24.99,2025-08-12
+P040,Smart Fitness Scale,59.99,HealthTech,69.99,2025-08-12
+P041,USB-C Hub 7-in-1,49.99,TechAccessories,39.99,2025-08-12
+P042,Wireless Presenting Remote,29.99,OfficeSupplies,34.99,2025-08-12
+P043,E-Reader Paperlight,129.99,BookTech,119.99,2025-08-12
+P044,Noise Cancelling Headphones,199.99,AudioKing,219.99,2025-08-12
+P045,Gaming Mouse Precision,79.99,GamersChoice,69.99,2025-08-12
+P046,Portable SSD 500GB,99.99,DataStore,89.99,2025-08-12
+P047,Smart Plug (2-pack),29.99,SmartHome,24.99,2025-08-12
+P048,Bluetooth Car Adapter,19.99,AutoTech,24.99,2025-08-12
+P049,Wireless Gaming Controller,59.99,GamersChoice,54.99,2025-08-12
+P050,Mini Projector HD,199.99,ScreenMasters,219.99,2025-08-12
+P051,Microphone USB Professional,89.99,AudioPro,99.99,2025-08-12
+P052,Streaming Media Player 4K,69.99,StreamTech,59.99,2025-08-12
+P053,Smart Lock Touchscreen,199.99,SafeHome,189.99,2025-08-12
+P054,Wireless Doorbell,39.99,HomeBasics,35.99,2025-08-12
+P055,Portable Bluetooth Speaker,69.99,AudioKing,59.99,2025-08-12
+P056,Digital Alarm Clock,24.99,HomeBasics,29.99,2025-08-12
+P057,WiFi Range Extender,49.99,NetworkPro,39.99,2025-08-12
+P058,Cordless Drill Set,129.99,ToolMaster,139.99,2025-08-12
+P059,Indoor Security Camera,79.99,SafeHome,69.99,2025-08-12
+P060,Smart Water Bottle,39.99,HealthTech,44.99,2025-08-12
+P061,Universal Remote Control,29.99,HomeEntertainment,34.99,2025-08-13
+P062,Wireless Earbud Case,19.99,AudioKing,24.99,2025-08-13
+P063,Laptop Cooling Pad,29.99,TechAccessories,24.99,2025-08-13
+P064,PC Gaming Headset,99.99,GamersChoice,89.99,2025-08-13
+P065,Wireless Webcam 1080p,59.99,VideoTech,69.99,2025-08-13
+P066,Laser Printer Monochrome,199.99,PrinterPro,189.99,2025-08-13
+P067,Smart Sous Vide Cooker,149.99,KitchenMaster,139.99,2025-08-13
+P068,Portable Hard Drive 2TB,79.99,DataStore,89.99,2025-08-13
+P069,USB Microphone Podcast,129.99,AudioPro,119.99,2025-08-13
+P070,Digital Drawing Tablet,149.99,ArtTech,159.99,2025-08-13
+P071,Smart Video Doorbell,169.99,SafeHome,159.99,2025-08-13
+P072,Wireless Printer All-in-One,149.99,PrinterPro,139.99,2025-08-13
+P073,Gaming Chair Ergonomic,199.99,GamersChoice,219.99,2025-08-13
+P074,Digital Meat Thermometer,19.99,KitchenMaster,24.99,2025-08-13
+P075,Waterproof Action Camera,149.99,PhotoPro,139.99,2025-08-13
+P076,Digital Piano 88-Key,549.99,MusicPro,599.99,2025-08-13
+P077,Smartphone Gimbal Stabilizer,89.99,PhotoPro,79.99,2025-08-13
+P078,Smart Garage Door Opener,179.99,HomeAutomation,169.99,2025-08-13
+P079,Curved Gaming Monitor 32",449.99,ScreenMasters,469.99,2025-08-13
+P080,Wireless Karaoke Microphone,39.99,MusicPro,34.99,2025-08-13
+P081,Wireless In-Ear Monitors,199.99,AudioPro,219.99,2025-08-13
+P082,Beard Trimmer Kit,49.99,GroomingTech,39.99,2025-08-13
+P083,Smart WiFi Router,129.99,NetworkPro,119.99,2025-08-13
+P084,Electric Kettle Programmable,59.99,KitchenMaster,69.99,2025-08-13
+P085,Wireless HDMI Transmitter,79.99,HomeEntertainment,89.99,2025-08-13
+P086,Bluetooth FM Transmitter,24.99,AutoTech,19.99,2025-08-13
+P087,Wireless Subwoofer,149.99,AudioKing,159.99,2025-08-13
+P088,Compact Photo Printer,99.99,PrinterPro,109.99,2025-08-13
+P089,Smart Body Scale,69.99,HealthTech,59.99,2025-08-13
+P090,Electric Wine Opener,29.99,HomeBasics,34.99,2025-08-13
+P091,PC Gaming Keyboard,89.99,GamersChoice,79.99,2025-08-13
+P092,Foldable Drone Mini,99.99,SkyTech,119.99,2025-08-13
+P093,Bluetooth Meat Thermometer,39.99,KitchenMaster,34.99,2025-08-13
+P094,LED Desk Lamp Adjustable,49.99,OfficeSupplies,39.99,2025-08-13
+P095,Smart Indoor Garden,149.99,HomeAutomation,169.99,2025-08-13
+P096,Document Scanner Portable,129.99,OfficeSupplies,119.99,2025-08-13
+P097,Smart Bike Lock,89.99,CycleTech,99.99,2025-08-13
+P098,Wireless Barcode Scanner,79.99,OfficeSupplies,69.99,2025-08-13
+P099,Digital Kitchen Timer,14.99,KitchenMaster,12.99,2025-08-13
+P100,GPS Cycling Computer,149.99,CycleTech,159.99,2025-08-13

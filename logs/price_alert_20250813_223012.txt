@@ -1,0 +1,351 @@
+PRICE ALERT: 58 products with competitor price drops
+Generated on: 2025-08-13 22:30:12
+
+Product: Gaming Laptop XR5
+Our Price: $1299.99
+Competitor: TechGiant
+Their Price: $1199.99
+Difference: $100.00 (7.7%)
+
+Product: 4K Smart TV 55"
+Our Price: $699.99
+Competitor: ElectroMart
+Their Price: $649.99
+Difference: $50.00 (7.1%)
+
+Product: Wireless Mouse Ultra
+Our Price: $59.99
+Competitor: TechGiant
+Their Price: $49.99
+Difference: $10.00 (16.7%)
+
+Product: External SSD 1TB
+Our Price: $149.99
+Competitor: DataStore
+Their Price: $139.99
+Difference: $10.00 (6.7%)
+
+Product: Bluetooth Speaker
+Our Price: $79.99
+Competitor: AudioKing
+Their Price: $69.99
+Difference: $10.00 (12.5%)
+
+Product: Tablet 10-inch
+Our Price: $399.99
+Competitor: TabletWorld
+Their Price: $389.99
+Difference: $10.00 (2.5%)
+
+Product: Wireless Earbuds
+Our Price: $89.99
+Competitor: AudioKing
+Their Price: $79.99
+Difference: $10.00 (11.1%)
+
+Product: Smart Watch Series 5
+Our Price: $249.99
+Competitor: WearTech
+Their Price: $229.99
+Difference: $20.00 (8.0%)
+
+Product: Gaming Console NextGen
+Our Price: $499.99
+Competitor: GamersChoice
+Their Price: $489.99
+Difference: $10.00 (2.0%)
+
+Product: Ultrabook Pro 13"
+Our Price: $1099.99
+Competitor: LaptopWorld
+Their Price: $1049.99
+Difference: $50.00 (4.5%)
+
+Product: Wireless Charger Pad
+Our Price: $39.99
+Competitor: TechGiant
+Their Price: $35.99
+Difference: $4.00 (10.0%)
+
+Product: VR Headset Pro
+Our Price: $299.99
+Competitor: VRZone
+Their Price: $279.99
+Difference: $20.00 (6.7%)
+
+Product: Action Camera 4K
+Our Price: $199.99
+Competitor: PhotoPro
+Their Price: $189.99
+Difference: $10.00 (5.0%)
+
+Product: Portable Power Bank 20000mAh
+Our Price: $59.99
+Competitor: PowerElectronics
+Their Price: $49.99
+Difference: $10.00 (16.7%)
+
+Product: WiFi Mesh System (3-pack)
+Our Price: $249.99
+Competitor: NetworkPro
+Their Price: $239.99
+Difference: $10.00 (4.0%)
+
+Product: Smart Doorbell Camera
+Our Price: $149.99
+Competitor: SmartHome
+Their Price: $139.99
+Difference: $10.00 (6.7%)
+
+Product: Air Purifier Premium
+Our Price: $199.99
+Competitor: CleanAir
+Their Price: $189.99
+Difference: $10.00 (5.0%)
+
+Product: Coffee Maker Deluxe
+Our Price: $129.99
+Competitor: KitchenMaster
+Their Price: $119.99
+Difference: $10.00 (7.7%)
+
+Product: Bluetooth Turntable
+Our Price: $159.99
+Competitor: AudioKing
+Their Price: $149.99
+Difference: $10.00 (6.3%)
+
+Product: Smart Light Bulbs (4-pack)
+Our Price: $49.99
+Competitor: SmartHome
+Their Price: $45.99
+Difference: $4.00 (8.0%)
+
+Product: Dash Cam Pro
+Our Price: $89.99
+Competitor: AutoTech
+Their Price: $79.99
+Difference: $10.00 (11.1%)
+
+Product: Electric Toothbrush Sonic
+Our Price: $79.99
+Competitor: HealthTech
+Their Price: $69.99
+Difference: $10.00 (12.5%)
+
+Product: Smart Thermostat
+Our Price: $179.99
+Competitor: HomeAutomation
+Their Price: $169.99
+Difference: $10.00 (5.6%)
+
+Product: Wireless Security Camera
+Our Price: $89.99
+Competitor: SafeHome
+Their Price: $79.99
+Difference: $10.00 (11.1%)
+
+Product: Digital Food Scale
+Our Price: $29.99
+Competitor: KitchenMaster
+Their Price: $24.99
+Difference: $5.00 (16.7%)
+
+Product: USB-C Hub 7-in-1
+Our Price: $49.99
+Competitor: TechAccessories
+Their Price: $39.99
+Difference: $10.00 (20.0%)
+
+Product: E-Reader Paperlight
+Our Price: $129.99
+Competitor: BookTech
+Their Price: $119.99
+Difference: $10.00 (7.7%)
+
+Product: Gaming Mouse Precision
+Our Price: $79.99
+Competitor: GamersChoice
+Their Price: $69.99
+Difference: $10.00 (12.5%)
+
+Product: Portable SSD 500GB
+Our Price: $99.99
+Competitor: DataStore
+Their Price: $89.99
+Difference: $10.00 (10.0%)
+
+Product: Smart Plug (2-pack)
+Our Price: $29.99
+Competitor: SmartHome
+Their Price: $24.99
+Difference: $5.00 (16.7%)
+
+Product: Wireless Gaming Controller
+Our Price: $59.99
+Competitor: GamersChoice
+Their Price: $54.99
+Difference: $5.00 (8.3%)
+
+Product: Streaming Media Player 4K
+Our Price: $69.99
+Competitor: StreamTech
+Their Price: $59.99
+Difference: $10.00 (14.3%)
+
+Product: Smart Lock Touchscreen
+Our Price: $199.99
+Competitor: SafeHome
+Their Price: $189.99
+Difference: $10.00 (5.0%)
+
+Product: Wireless Doorbell
+Our Price: $39.99
+Competitor: HomeBasics
+Their Price: $35.99
+Difference: $4.00 (10.0%)
+
+Product: Portable Bluetooth Speaker
+Our Price: $69.99
+Competitor: AudioKing
+Their Price: $59.99
+Difference: $10.00 (14.3%)
+
+Product: WiFi Range Extender
+Our Price: $49.99
+Competitor: NetworkPro
+Their Price: $39.99
+Difference: $10.00 (20.0%)
+
+Product: Indoor Security Camera
+Our Price: $79.99
+Competitor: SafeHome
+Their Price: $69.99
+Difference: $10.00 (12.5%)
+
+Product: Laptop Cooling Pad
+Our Price: $29.99
+Competitor: TechAccessories
+Their Price: $24.99
+Difference: $5.00 (16.7%)
+
+Product: PC Gaming Headset
+Our Price: $99.99
+Competitor: GamersChoice
+Their Price: $89.99
+Difference: $10.00 (10.0%)
+
+Product: Laser Printer Monochrome
+Our Price: $199.99
+Competitor: PrinterPro
+Their Price: $189.99
+Difference: $10.00 (5.0%)
+
+Product: Smart Sous Vide Cooker
+Our Price: $149.99
+Competitor: KitchenMaster
+Their Price: $139.99
+Difference: $10.00 (6.7%)
+
+Product: USB Microphone Podcast
+Our Price: $129.99
+Competitor: AudioPro
+Their Price: $119.99
+Difference: $10.00 (7.7%)
+
+Product: Smart Video Doorbell
+Our Price: $169.99
+Competitor: SafeHome
+Their Price: $159.99
+Difference: $10.00 (5.9%)
+
+Product: Wireless Printer All-in-One
+Our Price: $149.99
+Competitor: PrinterPro
+Their Price: $139.99
+Difference: $10.00 (6.7%)
+
+Product: Waterproof Action Camera
+Our Price: $149.99
+Competitor: PhotoPro
+Their Price: $139.99
+Difference: $10.00 (6.7%)
+
+Product: Smartphone Gimbal Stabilizer
+Our Price: $89.99
+Competitor: PhotoPro
+Their Price: $79.99
+Difference: $10.00 (11.1%)
+
+Product: Smart Garage Door Opener
+Our Price: $179.99
+Competitor: HomeAutomation
+Their Price: $169.99
+Difference: $10.00 (5.6%)
+
+Product: Wireless Karaoke Microphone
+Our Price: $39.99
+Competitor: MusicPro
+Their Price: $34.99
+Difference: $5.00 (12.5%)
+
+Product: Beard Trimmer Kit
+Our Price: $49.99
+Competitor: GroomingTech
+Their Price: $39.99
+Difference: $10.00 (20.0%)
+
+Product: Smart WiFi Router
+Our Price: $129.99
+Competitor: NetworkPro
+Their Price: $119.99
+Difference: $10.00 (7.7%)
+
+Product: Bluetooth FM Transmitter
+Our Price: $24.99
+Competitor: AutoTech
+Their Price: $19.99
+Difference: $5.00 (20.0%)
+
+Product: Smart Body Scale
+Our Price: $69.99
+Competitor: HealthTech
+Their Price: $59.99
+Difference: $10.00 (14.3%)
+
+Product: PC Gaming Keyboard
+Our Price: $89.99
+Competitor: GamersChoice
+Their Price: $79.99
+Difference: $10.00 (11.1%)
+
+Product: Bluetooth Meat Thermometer
+Our Price: $39.99
+Competitor: KitchenMaster
+Their Price: $34.99
+Difference: $5.00 (12.5%)
+
+Product: LED Desk Lamp Adjustable
+Our Price: $49.99
+Competitor: OfficeSupplies
+Their Price: $39.99
+Difference: $10.00 (20.0%)
+
+Product: Document Scanner Portable
+Our Price: $129.99
+Competitor: OfficeSupplies
+Their Price: $119.99
+Difference: $10.00 (7.7%)
+
+Product: Wireless Barcode Scanner
+Our Price: $79.99
+Competitor: OfficeSupplies
+Their Price: $69.99
+Difference: $10.00 (12.5%)
+
+Product: Digital Kitchen Timer
+Our Price: $14.99
+Competitor: KitchenMaster
+Their Price: $12.99
+Difference: $2.00 (13.3%)
+

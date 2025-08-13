@@ -1,0 +1,7 @@
+streamlit==1.22.0
+pandas==1.5.3
+plotly==5.14.1
+# © 2025 Meet Jain | Project created by Meet Jain. Unauthorized copying or reproduction is prohibited.
+numpy==1.24.3
+pillow==9.5.0
+python-dotenv==1.0.0

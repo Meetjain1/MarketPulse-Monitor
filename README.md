@@ -125,36 +125,6 @@ Use the Search & Filter page to:
 3. Test the email configuration
 4. Set up alert frequency preferences
 
-## 🚀 Deployment on Streamlit Cloud
-
-### Option 1: Streamlit Cloud
-
-1. Push your code to a GitHub repository
-2. Sign up for [Streamlit Cloud](https://streamlit.io/cloud)
-3. Click "New app" and select your repository
-4. Configure the app:
-   - Set the main file path to `app.py`
-   - Add your environment variables (SMTP settings)
-5. Click "Deploy"
-
-Your app will be available at a `streamlit.app` URL, and you can set up authentication if needed.
-
-> **Note on Python Compatibility**: This project uses `runtime.txt` to specify Python 3.10, which ensures compatibility with all dependencies. If you encounter dependency issues during deployment, check that you're using the specified Python version.
-
-### Option 2: Self-Hosting
-
-1. Set up a server with Python installed
-2. Clone your repository
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run Streamlit behind a proxy server like Nginx:
-   ```bash
-   streamlit run app.py --server.port 8501
-   ```
-5. Configure your proxy to forward requests to port 8501
-
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.

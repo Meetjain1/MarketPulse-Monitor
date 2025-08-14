@@ -5,9 +5,7 @@ import datetime
 
 def get_db_path():
     # create db directory if it doesn't exist
-    # using absolute path based on the current file's location for better compatibility
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    db_dir = os.path.join(base_dir, 'data')
+    db_dir = os.path.join(os.getcwd(), 'data')
     if not os.path.exists(db_dir):
         os.makedirs(db_dir)
     

@@ -1,60 +1,106 @@
-# Streamlit Cloud Deployment Guide
+# Deployment Guide for MarketPulse Monitor
 
-This document provides instructions for deploying the MarketPulse Monitor application on Streamlit Cloud.
+## Overview
+This guide covers deploying the MarketPulse Monitor dashboard to Streamlit Cloud.
 
 ## Prerequisites
+- Python 3.9, 3.10, or 3.11 (3.11 recommended)
+- All dependencies listed in requirements.txt
+- Git repository access
 
-- A GitHub account
-- Your MarketPulse Monitor code pushed to a GitHub repository
-- A Streamlit Cloud account (sign up at https://streamlit.io/cloud if you don't have one)
+## Files Required for Deployment
+
+### 1. requirements.txt
+Contains all Python dependencies with version constraints:
+```
+streamlit>=1.28.0,<2.0.0
+pandas>=2.0.0,<3.0.0
+plotly>=5.14.1,<6.0.0
+numpy>=1.26.0,<2.0.0
+pillow>=10.0.0,<11.0.0
+openpyxl>=3.1.0,<4.0.0
+xlrd>=2.0.1,<3.0.0
+```
+
+### 2. runtime.txt
+Specifies Python version:
+```
+python-3.11.18
+```
+
+### 3. packages.txt
+System-level dependencies:
+```
+libgl1-mesa-glx
+```
+
+### 4. Procfile
+Deployment configuration:
+```
+web: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
+```
 
 ## Deployment Steps
 
-1. **Prepare your repository**
-   - Make sure all the necessary files are committed and pushed to your GitHub repository
-   - The main files needed are:
-     - `app.py` - Main application file
-     - `requirements.txt` - Dependencies
-     - Supporting modules: `db.py`, `price_compare.py`, `email_alert.py`
+1. **Push Changes to Git**
+   ```bash
+   git add .
+   git commit -m "Fix deployment compatibility issues"
+   git push origin main
+   ```
 
-2. **Log in to Streamlit Cloud**
-   - Go to https://streamlit.io/cloud
-   - Sign in with your GitHub account
+2. **Deploy on Streamlit Cloud**
+   - Connect your GitHub repository
+   - Set main file to: `app.py`
+   - Deploy
 
-3. **Deploy your app**
-   - Click on "New app" button
-   - Select your repository from the list
-   - Choose the branch (usually "main")
-   - Set the Main file path to `app.py`
-   - Optionally customize the app URL
-   - Click "Deploy!"
+## Troubleshooting Common Issues
 
-4. **Monitor deployment**
-   - Streamlit Cloud will install dependencies and start your app
-   - You can view logs during the deployment process
-   - Once deployment is complete, your app will be available at the assigned URL
+### Issue: "distutils was removed from the standard library in Python 3.12"
+**Solution**: Use Python 3.11 or lower (specified in runtime.txt)
 
-## Troubleshooting
+### Issue: Package version incompatibility
+**Solution**: All packages in requirements.txt are now compatible with Python 3.11
 
-If you encounter deployment issues:
+### Issue: Build failures
+**Solution**: 
+- Ensure all dependencies are properly specified
+- Use compatible Python version
+- Check for missing system packages
 
-1. **Dependency conflicts**
-   - Ensure your `requirements.txt` specifies compatible versions
-   - Consider using older, more stable versions of packages
+### Issue: Import errors
+**Solution**: Run test_imports.py locally to verify all imports work
 
-2. **Python version issues**
-   - Streamlit Cloud uses Python 3.9 by default
-   - You can specify a different version using a `runtime.txt` file
+## Local Testing
 
-3. **File access errors**
-   - Use absolute paths with `os.path.dirname(__file__)` instead of `os.getcwd()`
-   - Avoid writing to the app directory during runtime
+Before deploying, test locally:
+```bash
+# Install dependencies
+pip install -r requirements.txt
 
-4. **Memory or performance issues**
-   - Optimize data loading and processing
-   - Consider using caching with `@st.cache_data` for expensive operations
+# Test imports
+python test_imports.py
 
-## Resources
+# Run app locally
+streamlit run app.py
+```
 
-- [Streamlit Cloud Documentation](https://docs.streamlit.io/streamlit-cloud)
-- [Streamlit Forums](https://discuss.streamlit.io/)
+## Environment Variables
+
+No environment variables are required for basic functionality.
+
+## Monitoring Deployment
+
+Check Streamlit Cloud logs for:
+- Package installation status
+- Python version compatibility
+- Import errors
+- Runtime errors
+
+## Support
+
+If issues persist:
+1. Check Streamlit Cloud logs
+2. Verify Python version compatibility
+3. Test locally with same Python version
+4. Review requirements.txt for conflicts

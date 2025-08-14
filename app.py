@@ -9,7 +9,8 @@ import numpy as np
 # import our modules
 import db
 import price_compare
-import email_alert
+
+# heads-up: email alerts are in-process, so we don't import/send real emails right now
 
 # init the database when app starts
 db.init_db()

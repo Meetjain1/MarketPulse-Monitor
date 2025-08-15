@@ -1,0 +1,21 @@
+product_id,product_name,our_price,competitor_name,competitor_price,last_updated
+3001,Device A,29.99,Market1,27.99,2025-08-03
+3002,Device B,34.99,Market2,35.99,2025-08-03
+3003,Device C,25.49,Market3,24.99,2025-08-03
+3004,Device D,39.99,Market1,39.99,2025-08-03
+3005,Device E,19.99,Market2,18.99,2025-08-03
+3006,Device F,59.99,Market3,62.99,2025-08-03
+3007,Device G,49.99,Market1,47.99,2025-08-03
+3008,Device H,69.99,Market2,69.99,2025-08-03
+3009,Device I,22.99,Market3,23.99,2025-08-03
+3010,Device J,32.99,Market1,31.99,2025-08-03
+3011,Device K,28.99,Market2,28.49,2025-08-03
+3012,Device L,37.99,Market3,37.99,2025-08-03
+3013,Device M,43.99,Market1,45.99,2025-08-03
+3014,Device N,54.99,Market2,54.49,2025-08-03
+3015,Device O,65.99,Market3,64.99,2025-08-03
+3016,Device P,76.99,Market1,76.99,2025-08-03
+3017,Device Q,87.99,Market2,85.99,2025-08-03
+3018,Device R,98.99,Market3,99.99,2025-08-03
+3019,Device S,109.99,Market1,107.99,2025-08-03
+3020,Device T,119.99,Market2,120.99,2025-08-03

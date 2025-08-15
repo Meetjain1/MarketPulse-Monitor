@@ -1,0 +1,21 @@
+product_id,product_name,our_price,competitor_name,competitor_price,last_updated
+4001,Accessory A,12.99,OutletA,11.99,2025-08-04
+4002,Accessory B,14.99,OutletB,15.99,2025-08-04
+4003,Accessory C,10.49,OutletC,9.99,2025-08-04
+4004,Accessory D,19.99,OutletA,19.99,2025-08-04
+4005,Accessory E,8.99,OutletB,7.99,2025-08-04
+4006,Accessory F,24.99,OutletC,26.99,2025-08-04
+4007,Accessory G,20.99,OutletA,19.99,2025-08-04
+4008,Accessory H,29.99,OutletB,29.99,2025-08-04
+4009,Accessory I,9.99,OutletC,10.99,2025-08-04
+4010,Accessory J,15.99,OutletA,14.99,2025-08-04
+4011,Accessory K,13.99,OutletB,13.49,2025-08-04
+4012,Accessory L,17.99,OutletC,17.99,2025-08-04
+4013,Accessory M,21.99,OutletA,23.99,2025-08-04
+4014,Accessory N,27.99,OutletB,27.49,2025-08-04
+4015,Accessory O,33.99,OutletC,32.99,2025-08-04
+4016,Accessory P,38.99,OutletA,38.99,2025-08-04
+4017,Accessory Q,43.99,OutletB,41.99,2025-08-04
+4018,Accessory R,48.99,OutletC,49.99,2025-08-04
+4019,Accessory S,53.99,OutletA,51.99,2025-08-04
+4020,Accessory T,59.99,OutletB,60.99,2025-08-04

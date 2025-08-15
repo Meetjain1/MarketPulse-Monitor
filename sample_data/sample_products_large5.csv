@@ -1,0 +1,41 @@
+product_id,product_name,our_price,competitor_name,competitor_price,last_updated
+1,Apple iPhone 15,999.99,Amazon,979.99,2025-07-01
+2,Samsung Galaxy S23,899.99,Flipkart,899.99,2025-07-01
+3,OnePlus 12,799.99,Amazon,819.99,2025-07-01
+4,Google Pixel 8,699.99,Flipkart,689.99,2025-07-01
+5,Apple AirPods Pro,249.99,Amazon,239.99,2025-07-01
+6,Sony WH-1000XM5,349.99,Flipkart,349.99,2025-07-01
+7,HP Spectre x360,1299.99,Amazon,1279.99,2025-07-01
+8,MacBook Air M3,1499.99,Flipkart,1499.99,2025-07-01
+9,Lenovo ThinkPad X1,1399.99,Amazon,1399.99,2025-07-01
+10,Asus ROG Phone 7,1099.99,Flipkart,1099.99,2025-07-01
+11,Apple Watch Series 9,399.99,Amazon,389.99,2025-07-01
+12,Fitbit Versa 4,199.99,Flipkart,209.99,2025-07-01
+13,Canon EOS R8,1799.99,Amazon,1799.99,2025-07-01
+14,Nikon Z6 II,1599.99,Flipkart,1579.99,2025-07-01
+15,GoPro Hero 12,499.99,Amazon,489.99,2025-07-01
+16,Apple iPad Pro,1099.99,Flipkart,1099.99,2025-07-01
+17,Microsoft Surface Pro 9,1299.99,Amazon,1279.99,2025-07-01
+18,Amazon Echo Dot,49.99,Flipkart,47.99,2025-07-01
+19,Google Nest Hub,99.99,Amazon,99.99,2025-07-01
+20,Logitech MX Master 3S,99.99,Flipkart,97.99,2025-07-01
+21,Apple iPhone 15,999.99,Amazon,969.99,2025-07-02
+22,Samsung Galaxy S23,899.99,Flipkart,889.99,2025-07-02
+23,OnePlus 12,799.99,Amazon,799.99,2025-07-02
+24,Google Pixel 8,699.99,Flipkart,709.99,2025-07-02
+25,Apple AirPods Pro,249.99,Amazon,249.99,2025-07-02
+26,Sony WH-1000XM5,349.99,Flipkart,339.99,2025-07-02
+27,HP Spectre x360,1299.99,Amazon,1299.99,2025-07-02
+28,MacBook Air M3,1499.99,Flipkart,1479.99,2025-07-02
+29,Lenovo ThinkPad X1,1399.99,Amazon,1379.99,2025-07-02
+30,Asus ROG Phone 7,1099.99,Flipkart,1099.99,2025-07-02
+31,Apple Watch Series 9,399.99,Amazon,399.99,2025-07-02
+32,Fitbit Versa 4,199.99,Flipkart,199.99,2025-07-02
+33,Canon EOS R8,1799.99,Amazon,1799.99,2025-07-02
+34,Nikon Z6 II,1599.99,Flipkart,1599.99,2025-07-02
+35,GoPro Hero 12,499.99,Amazon,509.99,2025-07-02
+36,Apple iPad Pro,1099.99,Flipkart,1099.99,2025-07-02
+37,Microsoft Surface Pro 9,1299.99,Amazon,1299.99,2025-07-02
+38,Amazon Echo Dot,49.99,Flipkart,49.99,2025-07-02
+39,Google Nest Hub,99.99,Amazon,97.99,2025-07-02
+40,Logitech MX Master 3S,99.99,Flipkart,99.99,2025-07-02

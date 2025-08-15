@@ -1,0 +1,21 @@
+product_id,product_name,our_price,competitor_name,competitor_price,last_updated
+1001,Widget A,19.99,ShopX,17.99,2025-08-01
+1002,Widget B,24.99,ShopY,25.99,2025-08-01
+1003,Widget C,15.49,ShopZ,14.99,2025-08-01
+1004,Widget D,29.99,ShopX,29.99,2025-08-01
+1005,Widget E,9.99,ShopY,8.99,2025-08-01
+1006,Widget F,49.99,ShopZ,52.99,2025-08-01
+1007,Widget G,39.99,ShopX,37.99,2025-08-01
+1008,Widget H,59.99,ShopY,59.99,2025-08-01
+1009,Widget I,12.99,ShopZ,13.99,2025-08-01
+1010,Widget J,22.99,ShopX,21.99,2025-08-01
+1011,Widget K,18.99,ShopY,18.49,2025-08-01
+1012,Widget L,27.99,ShopZ,27.99,2025-08-01
+1013,Widget M,33.99,ShopX,35.99,2025-08-01
+1014,Widget N,44.99,ShopY,44.49,2025-08-01
+1015,Widget O,55.99,ShopZ,54.99,2025-08-01
+1016,Widget P,66.99,ShopX,66.99,2025-08-01
+1017,Widget Q,77.99,ShopY,75.99,2025-08-01
+1018,Widget R,88.99,ShopZ,89.99,2025-08-01
+1019,Widget S,99.99,ShopX,97.99,2025-08-01
+1020,Widget T,109.99,ShopY,110.99,2025-08-01

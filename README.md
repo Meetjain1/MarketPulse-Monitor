@@ -1,14 +1,26 @@
+# ⚠️ PROTECTED CODE - DO NOT COPY ⚠️
+
+This is a personal project by Meet Jain. This repository is publicly visible for demonstration purposes only.
+
+Author: Meet Jain
+- This project is protected. Do not copy, fork, or reuse without permission.
+- Unauthorized use is strictly prohibited. Only the official deployment is allowed to run.
+
+## Legal Protection
+This project is protected by copyright law and includes proprietary security measures. Unauthorized use or attempts to circumvent security measures may result in legal consequences.
+
+## Contact
+For any inquiries about this project please contact: meetofficialhere@gmail.com
+
 # MarketPulse Monitor - E-commerce Price Monitoring Dashboard
 
 MarketPulse Monitor is a powerful web-based dashboard built with Streamlit that helps e-commerce businesses track competitor pricing, compare with their own prices, and make data-driven pricing decisions.
 
-![MarketPulse Monitor Dashboard](https://i.ibb.co/qnwP3jw/market-pulse-dashboard.png)
-
-## 📊 Project Overview
+## Project Overview
 
 In today's competitive e-commerce landscape, staying on top of competitor pricing is essential for maintaining market share and maximizing profits. MarketPulse Monitor provides a real-time view of how your prices compare to competitors, helping you identify opportunities and threats.
 
-## 🏗️ Architecture
+## Architecture
 
 The application follows a modular architecture designed for maintainability and extensibility:
 
@@ -78,7 +90,7 @@ The application follows a modular architecture designed for maintainability and 
 └─────────────┘      └─────────────┘      └─────────────┘
 ```
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: Streamlit
 - **Data Processing**: Pandas, NumPy
@@ -86,7 +98,7 @@ The application follows a modular architecture designed for maintainability and 
 - **Database**: SQLite
 - **Data Format**: CSV
 
-## 📱 Features
+## Features
 
 - **Interactive Dashboard**: Visual overview of price comparisons
 - **Data Upload**: Import pricing data via CSV files
@@ -95,7 +107,7 @@ The application follows a modular architecture designed for maintainability and 
 - **Search & Filter**: Find specific products or competitors
 - **Database Management**: Reset database when needed
 
-## 📖 Usage Guide
+## Usage Guide
 
 ### Dashboard Overview
 
@@ -142,19 +154,8 @@ If you need to start fresh:
 2. In the "Database Management" section, use the "Delete Database" button
 3. Confirm your action (this will permanently remove all product data)
 
-## 🚀 Deployment on Streamlit Cloud
 
-To deploy this project on Streamlit Cloud:
-
-1. Fork this repository to your GitHub account
-2. Log in to [Streamlit Cloud](https://streamlit.io/cloud)
-3. Click "New app" and select your forked repository
-4. Set the main file path to `app.py`
-5. Deploy your app
-
-The application will be publicly accessible with an automatic HTTPS certificate.
-
-## 🔧 Project Structure
+## Project Structure
 
 ```
 ├── app.py               # Main Streamlit application
@@ -168,10 +169,31 @@ The application will be publicly accessible with an automatic HTTPS certificate.
     └── price_monitor.db # SQLite database
 ```
 
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to submit pull requests with improvements or new features.
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+Connect with me through the following platforms:
+
+<!-- <p align="left">
+<a href="https://www.linkedin.com/in/meet-jain-413015265/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/meet-jain-413015265/" height="35" width="45" /></a>
+<a href="https://discordapp.com/users/meetofficial" target="blank"><img align="center" src="https://github.com/Meetjain1/Meetjain1/assets/133582566/098a209a-a1d2-4350-9331-8f90203cc34d" alt="https://discordapp.com/users/meetofficial" height="45" width="45" /></a>
+<hr> -->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/meet-jain-413015265/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/Meetjain_100)
+
+### Social Media and Platforms
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white)](https://discordapp.com/users/meetofficial)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/m.jain_17/)
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-FE7A16?style=flat&logo=stackoverflow&logoColor=white)](https://stackoverflow.com/users/21919635/meet-jain)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=flat&logo=medium&logoColor=white)](https://medium.com/@meetofficialhere)
+[![Hashnode](https://img.shields.io/badge/Hashnode-2962FF?style=flat&logo=hashnode&logoColor=white)](https://hashnode.com/@meetofficial)
+
+
+## Support Me
+
+<h3>If you like my work, you can support me by buying me a coffee Thanks! </h3>
+
+[![Buy Me A Coffee](https://img.shields.io/badge/-Buy%20Me%20A%20Coffee-orange?style=flat-square&logo=buymeacoffee)](https://buymeacoffee.com/meetjain)

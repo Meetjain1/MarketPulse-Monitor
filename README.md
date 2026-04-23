@@ -216,9 +216,9 @@ Current protections:
 - Negative price rejection
 - Basic exception handling around persistence operations
 
-Critical issue currently present:
+Critical issue currently present (known production blocker):
 
-- `search_products` builds SQL with string interpolation and is vulnerable to SQL injection if untrusted input is passed; this must be replaced with parameterized queries before any production exposure.
+- `search_products` builds SQL with string interpolation and is vulnerable to SQL injection if untrusted input is passed; this is a known critical security finding in the current codebase and must be replaced with parameterized queries before any production exposure.
 
 Additional security gaps to address before production:
 - Authentication and role-based access controls

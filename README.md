@@ -144,7 +144,7 @@ This ASCII diagram is the current architecture reference and can be swapped with
 ## Project Structure
 
 ```text
-/home/runner/work/MarketPulse-Monitor/MarketPulse-Monitor
+MarketPulse-Monitor/
 ├── app.py                # Main Streamlit application and page orchestration
 ├── app_launcher.py       # Lightweight launcher wrapper
 ├── price_compare.py      # Core pricing logic and KPI calculation
@@ -216,9 +216,11 @@ Current protections:
 - Negative price rejection
 - Basic exception handling around persistence operations
 
-Security gaps to address before production:
+Critical issue currently present:
 
-- Parameterized search queries (`search_products`) to eliminate SQL injection risk
+- `search_products` builds SQL with string interpolation and is vulnerable to SQL injection if untrusted input is passed; this must be replaced with parameterized queries before any production exposure.
+
+Additional security gaps to address before production:
 - Authentication and role-based access controls
 - Secrets management for outbound notification providers
 - Audit logging and tamper-evident event history
